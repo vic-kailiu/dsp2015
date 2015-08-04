@@ -41,10 +41,6 @@
          - .png and .svg icons sprite, 
          - preloader.gif (for browsers that do not support CSS animations) -->
     <link rel="stylesheet" href="photoswipe/default-skin/default-skin.css"> 
-    <!-- Core JS file -->
-    <script src="photoswipe/photoswipe.min.js"></script> 
-    <!-- UI JS file -->
-    <script src="photoswipe/photoswipe-ui-default.min.js"></script> 
 </head>
 
 <body>
@@ -163,50 +159,269 @@
             </div>
             <div class="panel-group" id="accordion">
                 <style type="text/css">
-                    .panel-heading a:after {
+                    .panel-heading a h4:after {
                         font-family:'Glyphicons Halflings';
                         content:"\e114";
                         float: right;
                         color: grey;
                     }
-                    .panel-heading a.collapsed:after {
+                    .panel-heading a.collapsed h4:after {
                         content:"\e080";
+                    }
+                    h4.panel-title {
+                        cursor: pointer;
+                    }
+                    .my-gallery {
+                      width: 100%;
+                      float: left;
+                    }
+                    .my-gallery img {
+                      width: 100%;
+                      height: auto;
+                    }
+                    .my-gallery figure {
+                      display: block;
+                      float: left;
+                      margin: 0 5px 5px 0;
+                      width: 150px;
+                    }
+                    .my-gallery figcaption {
+                      display: none;
                     }
                 </style>
                 <div class="panel panel-default" id="panel1">
                     <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne">
+                        <a data-toggle="collapse" data-target="#collapseOne">
+                            <h4 class="panel-title">
                                 Day 1
-                            </a>
-                        </h4>
+                            </h4>
+                        </a>
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse in">
-                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                        <div class="panel-body">
+                            <div class="my-gallery">
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0093.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0093.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0094.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0094.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0003.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0003.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0005.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0005.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0008.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0008.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0010.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0010.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0011.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0011.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0014.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0014.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0016.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0016.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0018.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0018.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0019.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0019.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0021.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0021.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0022.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0022.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0025.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0025.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0027.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0027.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0029.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0029.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0032.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0032.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0035.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0035.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0037.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0037.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0038.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0038.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0039.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0039.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0041.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0041.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0044.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0044.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0045.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0045.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0047.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0047.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0048.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0048.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0050.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0050.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7543.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7543.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7550.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7550.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0052.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0052.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7560.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7560.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0053.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0053.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0054.jpg" itemprop="contentUrl" data-size="2796x2000"><img src="photos\1\thumb\DSC_0054.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0057.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0057.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0058.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0058.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0059.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0059.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7562.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7562.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0060.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0060.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0061.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0061.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0063.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0063.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7563.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7563.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7564.jpg" itemprop="contentUrl" data-size="1200x1800"><img src="photos\1\thumb\IMG_7564.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0064.jpg" itemprop="contentUrl" data-size="3000x1855"><img src="photos\1\thumb\DSC_0064.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7566.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7566.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7567.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7567.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7568.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7568.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7569.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7569.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7570.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7570.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0065.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0065.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0066.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0066.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0069.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0069.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0071.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0071.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7572.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7572.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0074.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0074.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0075.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0075.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0076.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0076.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0077.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0077.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0078.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0078.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0079.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0079.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0080.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0080.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0081.jpg" itemprop="contentUrl" data-size="3000x3000"><img src="photos\1\thumb\DSC_0081.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0099.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0099.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0101.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0101.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0102.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0102.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0100.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0100.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0097.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0097.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0096.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0096.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0082.jpg" itemprop="contentUrl" data-size="3000x3000"><img src="photos\1\thumb\DSC_0082.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0083.jpg" itemprop="contentUrl" data-size="3000x3000"><img src="photos\1\thumb\DSC_0083.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0084.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0084.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0088.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0088.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0090.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0090.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7589.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7589.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7592.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7592.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7595.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7595.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7598.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7598.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7599.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7599.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7601.jpg" itemprop="contentUrl" data-size="1200x1800"><img src="photos\1\thumb\IMG_7601.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7604.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7604.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\IMG_7607.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\1\thumb\IMG_7607.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0095.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0095.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0089.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0089.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0091.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0091.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0092.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0092.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0085.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0085.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0086.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0086.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\1\DSC_0087.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\1\thumb\DSC_0087.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="panel panel-default" id="panel2">
                     <div class="panel-heading">
-                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo" class="collapsed">
+                         <a data-toggle="collapse" data-target="#collapseTwo" class="collapsed">
+                            <h4 class="panel-title">
                                 Day 2
-                            </a>
-                        </h4>
+                            </h4>
+                        </ha>
                     </div>
                     <div id="collapseTwo" class="panel-collapse collapse">
-                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                        <div class="panel-body">
+                            <div class="my-gallery">
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0001.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0001.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0002.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0002.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0003.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0003.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0004.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0004.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0005.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0005.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0006.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0006.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0007.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0007.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0008.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0008.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0009.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0009.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0010.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0010.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0011.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0011.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0012.jpg" itemprop="contentUrl" data-size="2500x2000"><img src="photos\2\thumb\DSC_0012.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0013.jpg" itemprop="contentUrl" data-size="2000x2000"><img src="photos\2\thumb\DSC_0013.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0014.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0014.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0015.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0015.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0016.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0016.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0017.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0017.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0018.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0018.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0019.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0019.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0020.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0020.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0021.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0021.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0022.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0022.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0023.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0023.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0024.jpg" itemprop="contentUrl" data-size="3000x1688"><img src="photos\2\thumb\DSC_0024.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0025.jpg" itemprop="contentUrl" data-size="3000x1688"><img src="photos\2\thumb\DSC_0025.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0026.jpg" itemprop="contentUrl" data-size="3000x1688"><img src="photos\2\thumb\DSC_0026.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0027.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0027.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0028.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0028.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0029.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0029.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0030.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0030.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0031.jpg" itemprop="contentUrl" data-size="2000x3000"><img src="photos\2\thumb\DSC_0031.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0032.jpg" itemprop="contentUrl" data-size="2000x3000"><img src="photos\2\thumb\DSC_0032.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0033.jpg" itemprop="contentUrl" data-size="2000x3000"><img src="photos\2\thumb\DSC_0033.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0034.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0034.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0035.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0035.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0036.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0036.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\IMG_7611.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\2\thumb\IMG_7611.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0037.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0037.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\IMG_7612.jpg" itemprop="contentUrl" data-size="1200x1800"><img src="photos\2\thumb\IMG_7612.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\IMG_7613.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\2\thumb\IMG_7613.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\IMG_7617.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\2\thumb\IMG_7617.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0038.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0038.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0039.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0039.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0040.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0040.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0041.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0041.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\IMG_7620.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\2\thumb\IMG_7620.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0042.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0042.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0043.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0043.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0044.jpg" itemprop="contentUrl" data-size="2000x3000"><img src="photos\2\thumb\DSC_0044.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0045.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0045.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0046.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0046.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0047.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0047.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0048.jpg" itemprop="contentUrl" data-size="3000x1688"><img src="photos\2\thumb\DSC_0048.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0049.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0049.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0050.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0050.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0051.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0051.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0052.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0052.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0053.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0053.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\IMG_7622.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\2\thumb\IMG_7622.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\IMG_7623.jpg" itemprop="contentUrl" data-size="1646x1800"><img src="photos\2\thumb\IMG_7623.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\IMG_7625.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\IMG_7625.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\IMG_7627.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\IMG_7627.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0054.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0054.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0055.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0055.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0056.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0056.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0057.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0057.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0058.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0058.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\IMG_7629.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\IMG_7629.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\IMG_7630.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\IMG_7630.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0059.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0059.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0060.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0060.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0061.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0061.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0062.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0062.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0063.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0063.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0064.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0064.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0065.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0065.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0066.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0066.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\DSC_0067.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\2\thumb\DSC_0067.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\IMG_7633.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\2\thumb\IMG_7633.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\IMG_7635.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\2\thumb\IMG_7635.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\IMG_7637.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\2\thumb\IMG_7637.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\2\IMG_7638.jpg" itemprop="contentUrl" data-size="1800x1200"><img src="photos\2\thumb\IMG_7638.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="panel panel-default" id="panel3">
                     <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-target="#collapseThree" href="#collapseThree" class="collapsed">
+                        <a data-toggle="collapse" data-target="#collapseThree" class="collapsed">
+                            <h4 class="panel-title">
                                 Day 3
-                            </a>
-                        </h4>
+                            </h4>
+                        </a>
                     </div>
                     <div id="collapseThree" class="panel-collapse collapse">
-                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                        <div class="panel-body">
+                            <div class="my-gallery">
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0001.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0001.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0002.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0002.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0003.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0003.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0004.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0004.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0005.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0005.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0006.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0006.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0007.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0007.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0008.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0008.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0009.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0009.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0010.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0010.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0011.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0011.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0012.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0012.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0014.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0014.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0015.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0015.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0016.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0016.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0017.jpg" itemprop="contentUrl" data-size="2000x3000"><img src="photos\3\thumb\DSC_0017.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0018.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0018.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0019.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0019.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0020.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0020.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0023.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0023.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="photos\3\DSC_0025.jpg" itemprop="contentUrl" data-size="3000x2000"><img src="photos\3\thumb\DSC_0025.jpg" itemprop="thumbnail" alt="Image description" /></a></figure>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -222,7 +437,7 @@
             <!-- <img src="images/CAS.jpg">
                 <img src="images/SPS.png"> -->
             <img src="images/ROSE2.png">
-		<img src="images/NTUTL.png">
+        <img src="images/NTUTL.png">
         <img src="images/PSP.jpg">
         </div>
         <div class="container" style="text-align: center;">
@@ -294,6 +509,11 @@
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
+
+    <!-- PhotoSwipe Core JS file -->
+    <script src="photoswipe/photoswipe.min.js"></script> 
+    <!-- UI JS file -->
+    <script src="photoswipe/photoswipe-ui-default.min.js"></script> 
 
     <!-- Custom Theme JavaScript -->
     <script src="js/script.js"></script>
